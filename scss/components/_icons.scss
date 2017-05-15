@@ -1,0 +1,45 @@
+// Font awesome arrow right
+
+.custom-icon {
+  font-size: 35px;
+  background-color: $black;
+  // background
+  // padding:px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  // border:6px solid #fff;
+  color: $vyellow;
+	// box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  -o-transition:.5s;
+  transition:.5s;
+}
+
+.viega-select {
+	ul {
+		li:hover {
+			background-color: #c6c6c6;
+
+			.custom-icon {
+			  background-color: $vyellow;
+				color: $black;
+			}
+		}
+	}
+}
+
+
+.fix-editor {
+  display:none;
+}
+.icon-wrapper {
+  display:inline-block;
+}
