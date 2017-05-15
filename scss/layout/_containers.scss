@@ -1,0 +1,203 @@
+	.bg-test {
+		background-image: url(../images/Hero2_MG_3440-bg.jpg);
+		background-size: cover;
+    background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		// height: 768px;
+
+		img {
+			max-height: 768px;
+			margin: 0 auto;
+		}
+	}
+
+	.first, .second {
+		background-color: $vgrey;
+
+		.wrap {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-left: 15px;
+			padding-right: 15px;
+
+			@include responsive(min-width, 992px) {
+				min-height: 500px;
+			}
+
+			@include responsive(min-width, 1200px) {
+				min-height: 600px;
+			}
+
+			@include responsive(min-width, 1400px) {
+				min-height: 768px;
+			}
+
+			.wrap-align {
+
+				h2 {
+					margin-bottom: 25px;
+				}
+
+				p {
+					margin-bottom: 25px;
+				}
+
+				max-width: 570px;
+
+				// @include responsive(min-width, 1800px) {
+				// 	max-width: 900px;
+				// }
+			}
+
+		}
+
+	}
+
+	// .second {
+	// 	background-color: $vgrey;
+	// }
+
+	.third {
+		background-color: $black;
+		// height: 328px;
+		// display: flex;
+		// align-items: center;
+
+		.col-md-1 {
+
+			.line {
+				height: 328px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			svg {
+				height: 186px;
+				width: 4px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		.left-wrap {
+			height: 328px;
+			display: flex;
+			align-items: center;
+			// justify-content: center;
+			max-width: 570px;
+			margin: 0 auto;
+			// text-align: center;
+
+			h1 {
+				font-size: 6.25rem;
+				color: $vyellow;
+				font-weight: bold;
+				margin-bottom: 0;
+				line-height: .9;
+			}
+
+			p {
+				font-size: 2.5rem;
+				font-weight: bold;
+				color: $vyellow;
+			}
+		}
+
+
+		.right-wrap {
+			height: 328px;
+			max-width: 570px;
+			display: flex;
+			align-items: center;
+			// justify-content: center;
+			margin: 0 auto;
+
+			// .align {
+			// 	border-left: 4px solid $white;
+			// }
+
+			p {
+				font-size: 1.25rem;
+				color: $white;
+			}
+		}
+
+	}
+
+	.fourth {
+		.vs {
+			background-color: #dddddd;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.viega-select {
+			// max-width: 570px;
+			// margin: 0 auto;
+
+			ul {
+				padding-left: 0;
+				list-style: none;
+				margin-bottom: 0;
+
+				li {
+					// font-size: 1.25rem;
+					padding: 50px 0 50px 0;
+					background-color: #dddddd;
+					border-bottom: 3px solid $white;
+
+					&:last-child {
+						border-bottom: none;
+					}
+
+					.viega-select-wrap {
+						max-width: 600px;
+						margin: 0 auto;
+					}
+
+					p {
+						font-size: 1.25rem;
+					}
+				}
+			}
+
+		}
+	}
+
+.fifth {
+	background-image: url(../images/contact-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 417px;
+
+	.left-wrap {
+		max-width: 570px;
+		margin: 0 auto;
+		h2 {
+			color: $white;
+		}
+	}
+
+	.right-wrap {
+		max-width: 570px;
+		margin: 0 auto;
+
+		p {
+			font-size: 2.1875rem;
+			color: $white;
+		}
+	}
+}
+
+.sixth {
+	height: 332px;
+	background-color: $vgrey;
+
+	.wrap {
+		max-width: 570px;
+		margin: 0 auto;
+	}
+}
