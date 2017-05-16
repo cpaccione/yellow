@@ -147,16 +147,16 @@ figure.effect-sarah img {
 	width: calc(100% + 20px);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-10px,0,0);
+	// -webkit-transform: translate3d(-10px,0,0);
+	// transform: translate3d(-10px,0,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
 figure.effect-sarah:hover img {
 	opacity: 0.1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(-12px,0,0);
+	transform: translate3d(-12px,0,0);
 }
 
 figure.effect-sarah figcaption {

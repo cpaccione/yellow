@@ -191,7 +191,23 @@ p {
   background-color: transparent;
   border: none; }
   .navbar-default .logo svg {
+    padding-top: 15px;
     width: 83px; }
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  background-color: #ffffff;
+  border-radius: 3px; }
+
+.navbar-right {
+  padding-right: 15px;
+  padding-top: 15px; }
+
+.gift-card {
+  padding-top: 10px;
+  max-width: 150px; }
+  .gift-card p {
+    color: #888888;
+    font-size: 0.75em; }
 
 .hero {
   height: 768px;
@@ -203,11 +219,10 @@ p {
   color: #FFF500; }
 
 .bg-test {
-  background-image: url(../images/Hero2_MG_3440-bg.jpg);
+  background-image: url(../images/product-shot-bg.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-repeat: no-repeat; }
   .bg-test img {
     max-height: 768px;
     margin: 0 auto; }
@@ -298,7 +313,10 @@ p {
   background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 417px; }
+  height: auto; }
+  @media (min-width: 768px) {
+    .fifth {
+      height: 792px; } }
   .fifth .left-wrap {
     max-width: 570px;
     margin: 0 auto; }
@@ -438,15 +456,13 @@ figure.effect-sarah img {
   width: calc(100% + 20px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px, 0, 0);
-  transform: translate3d(-10px, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 figure.effect-sarah:hover img {
   opacity: 0.1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+  -webkit-transform: translate3d(-12px, 0, 0);
+  transform: translate3d(-12px, 0, 0); }
 
 figure.effect-sarah figcaption {
   text-align: left; }

@@ -5,8 +5,29 @@
 	.logo {
 
 		svg {
+			padding-top: 15px;
 			width: 83px;
 		}
+	}
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	background-color: $white;
+	border-radius: 3px;
+}
+
+.navbar-right {
+	padding-right: 15px;
+	padding-top: 15px;
+}
+
+.gift-card {
+	padding-top: 10px;
+	max-width: 150px;
+
+	p {
+		color: $dark-grey;
+		font-size: 0.75em;
 	}
 }
 
