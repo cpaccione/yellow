@@ -288,25 +288,30 @@ p {
       font-size: 1.25rem;
       color: #ffffff; }
 
-.fourth .vs {
-  background-color: #dddddd;
-  padding-left: 0;
-  padding-right: 0; }
-.fourth .viega-select ul {
-  padding-left: 0;
-  list-style: none;
-  margin-bottom: 0; }
-  .fourth .viega-select ul li {
-    padding: 50px 0 50px 0;
+.fourth {
+  background-image: url("../images/product-shot-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .fourth .vs {
     background-color: #dddddd;
-    border-bottom: 3px solid #ffffff; }
-    .fourth .viega-select ul li:last-child {
-      border-bottom: none; }
-    .fourth .viega-select ul li .viega-select-wrap {
-      max-width: 600px;
-      margin: 0 auto; }
-    .fourth .viega-select ul li p {
-      font-size: 1.25rem; }
+    padding-left: 0;
+    padding-right: 0; }
+  .fourth .viega-select ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0; }
+    .fourth .viega-select ul li {
+      padding: 50px 0 50px 0;
+      background-color: #dddddd;
+      border-bottom: 3px solid #ffffff; }
+      .fourth .viega-select ul li:last-child {
+        border-bottom: none; }
+      .fourth .viega-select ul li .viega-select-wrap {
+        max-width: 600px;
+        margin: 0 auto; }
+      .fourth .viega-select ul li p {
+        font-size: 1.25rem; }
 
 .fifth {
   background-image: url(../images/contact-bg.png);
