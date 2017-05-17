@@ -55,23 +55,26 @@
 
 	}
 
-	// .second {
-	// 	background-color: $vgrey;
-	// }
-
 	.third {
 		background-color: $black;
-		// height: 328px;
-		// display: flex;
-		// align-items: center;
+
+		@include responsive(min-width, 768px) {
+			height: 328px;
+			display: flex;
+			align-items: center;
+		}
+
+		.container-fluid {
+			width: 100%;
+		}
 
 		.col-md-1 {
 
 			.line {
-				height: 328px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
+				// height: 328px;
+				// display: flex;
+				// align-items: center;
+				// justify-content: center;
 			}
 
 			svg {
@@ -83,13 +86,9 @@
 		}
 
 		.left-wrap {
-			height: 328px;
-			display: flex;
-			align-items: center;
-			// justify-content: center;
 			max-width: 570px;
 			margin: 0 auto;
-			// text-align: center;
+
 
 			h1 {
 				font-size: 6.25rem;
@@ -108,16 +107,8 @@
 
 
 		.right-wrap {
-			height: 328px;
 			max-width: 570px;
-			display: flex;
-			align-items: center;
-			// justify-content: center;
 			margin: 0 auto;
-
-			// .align {
-			// 	border-left: 4px solid $white;
-			// }
 
 			p {
 				font-size: 1.25rem;
@@ -175,6 +166,12 @@
 
 	@include responsive(min-width, 768px) {
 		height: 792px;
+		display: flex;
+		align-items: center;
+	}
+
+	.container-fluid {
+		width: 100%;
 	}
 
 	.left-wrap {
@@ -197,11 +194,39 @@
 }
 
 .sixth {
-	height: 332px;
+	// height: 332px;
 	background-color: $vgrey;
+
+	@include responsive(min-width, 768px) {
+		height: 332px;
+		display: flex;
+		align-items: center;
+	}
+
+	.container-fluid {
+		width: 100%;
+	}
 
 	.wrap {
 		max-width: 570px;
 		margin: 0 auto;
+
+		.fa-ul {
+			margin: 0;
+			line-height: 36px;
+
+			li {
+
+				a {
+					color: $black;
+					text-decoration: none;
+
+					&:hover {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+
 	}
 }

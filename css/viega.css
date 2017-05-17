@@ -256,20 +256,19 @@ p {
 
 .third {
   background-color: #000000; }
-  .third .col-md-1 .line {
-    height: 328px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+  @media (min-width: 768px) {
+    .third {
+      height: 328px;
+      display: flex;
+      align-items: center; } }
+  .third .container-fluid {
+    width: 100%; }
   .third .col-md-1 svg {
     height: 186px;
     width: 4px;
     display: block;
     margin: 0 auto; }
   .third .left-wrap {
-    height: 328px;
-    display: flex;
-    align-items: center;
     max-width: 570px;
     margin: 0 auto; }
     .third .left-wrap h1 {
@@ -283,10 +282,7 @@ p {
       font-weight: bold;
       color: #FFF500; }
   .third .right-wrap {
-    height: 328px;
     max-width: 570px;
-    display: flex;
-    align-items: center;
     margin: 0 auto; }
     .third .right-wrap p {
       font-size: 1.25rem;
@@ -319,7 +315,11 @@ p {
   height: auto; }
   @media (min-width: 768px) {
     .fifth {
-      height: 792px; } }
+      height: 792px;
+      display: flex;
+      align-items: center; } }
+  .fifth .container-fluid {
+    width: 100%; }
   .fifth .left-wrap {
     max-width: 570px;
     margin: 0 auto; }
@@ -333,11 +333,25 @@ p {
       color: #ffffff; }
 
 .sixth {
-  height: 332px;
   background-color: #EFEFEF; }
+  @media (min-width: 768px) {
+    .sixth {
+      height: 332px;
+      display: flex;
+      align-items: center; } }
+  .sixth .container-fluid {
+    width: 100%; }
   .sixth .wrap {
     max-width: 570px;
     margin: 0 auto; }
+    .sixth .wrap .fa-ul {
+      margin: 0;
+      line-height: 36px; }
+      .sixth .wrap .fa-ul li a {
+        color: #000000;
+        text-decoration: none; }
+        .sixth .wrap .fa-ul li a:hover {
+          font-weight: bold; }
 
 footer {
   height: 148px; }
@@ -345,8 +359,10 @@ footer {
     padding-top: 37px;
     max-width: 570px;
     margin: 0 auto; }
-  footer .logo svg {
-    width: 82px; }
+  footer .logo {
+    padding-right: 10px; }
+    footer .logo svg {
+      width: 82px; }
 
 .grid {
   position: relative;
