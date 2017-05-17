@@ -1,0 +1,90 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title :
+ Author :
+ URL : http://
+
+ Last Updated :
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+#header {
+  display: none;
+}
+
+.confirm h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+html.embed {
+  background-color: transparent;
+}
+
+.wufoo label.desc, .wufoo legend.desc {
+  display: none;
+}
+
+input.large,
+input.medium {
+  height: 55px;
+  font-size: 17px;
+}
+
+.wufoo input.text {
+  font-size: 17px;
+  padding-left: 10px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.wufoo li.focused {
+  background: transparent;
+  transition: all 0.3s ease-in-out 0s;
+  outline: 0;
+}
+
+.wufoo input.text:active,
+.wufoo input.text:focus {
+  background-color: #FFF500;
+  transition: all 0.3s ease-in-out 0s;
+  outline: 0;
+}
+
+.wufoo input.text:hover {
+  cursor: default;
+}
+
+input.btTxt {
+  transition: all 0.3s ease-in-out 0s;
+  min-width: 145px;
+  font-family: "Gotham A", "Gotham B", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  border: 2px solid #fff500;
+  height: 50px;
+  /*padding: 24px 40px 22px 40px;*/
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  ms-touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0.875em;
+  color: #000000;
+  background-color: #FFF500;
+  text-decoration: none;
+  display: inline-block;
+}
+
+input.btTxt:hover {
+    transition: all 0.3s ease-in-out 0s;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
