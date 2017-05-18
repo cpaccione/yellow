@@ -1,3 +1,44 @@
+.desktop-nav {
+	display: none;
+
+	@include responsive(min-width, 768px) {
+		display: block;
+	}
+}
+
+.mobile-nav {
+	display: block;
+	background-color: $mobile-grey;
+
+	.logo {
+
+		svg {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			width: 56px;
+		}
+	}
+
+	.gift-card {
+		// padding-top: 10px;
+
+		p {
+			color: $white;
+			font-size: 0.75em;
+			margin: 0;
+			padding-top: 15px;
+
+			@include responsive(max-width, 331px) {
+				padding-top: 0;
+			}
+		}
+	}
+
+	@include responsive(min-width, 768px) {
+		display: none;
+	}
+}
+
 .navbar-default {
 	background-color: transparent;
 	border: none;
@@ -31,14 +72,34 @@
 	}
 }
 
+
+
 // Hero copy
 
 .hero {
-	height: 768px;
 	background-image: url('../images/hero-desktop.png');
 	background-repeat: no-repeat;
-	background-position: 50% 150px;
-	// background-attachment: fixed;
+	background-position: center top;
+	padding-bottom: 50px;
+
+	@include responsive(min-width, 768px) {
+		height: 768px;
+		background-position: 50% 150px;
+		padding-bottom: 0;
+	}
+
+	@include responsive(max-width, 600px) {
+
+		h1 {
+			font-size: 4em;
+		}
+	}
+
+	@include responsive(max-width, 320px) {
+		h1 {
+			font-size: 3em;
+		}
+	}
 
 	.wrap {
 		p {

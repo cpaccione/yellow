@@ -63,7 +63,7 @@ input.btTxt {
   border: 2px solid #fff500;
   height: 50px;
   /*padding: 24px 40px 22px 40px;*/
-  border-radius: 3px;
+  border-radius: 0px;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -87,4 +87,12 @@ input.btTxt:hover {
     background-color: #ffffff;
     color: #000000;
     text-decoration: none;
+}
+
+select {
+  height: 55px;
+}
+
+form li {
+  padding: 6px 0 9px 0;
 }
