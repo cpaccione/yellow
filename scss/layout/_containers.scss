@@ -57,6 +57,9 @@
 	}
 
 	.third {
+		background-image: url(../images/contact-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
 		background-color: $black;
 
 		@include responsive(min-width, 768px) {
@@ -128,10 +131,32 @@
 			max-width: 570px;
 			margin: 0 auto;
 
+			@include responsive(max-width, 992px) {
+				padding-bottom: 50px;
+			}
+
 			p {
 				font-size: 1.25rem;
 				color: $white;
 			}
+		}
+
+	}
+
+	.fourth-mobile {
+		background-color: $standard-grey;
+		display: block;
+
+		@include responsive(min-width, 992px) {
+			display: none;
+		}
+
+		p {
+			padding: 20px;
+		}
+
+		img {
+			margin: 0 auto;
 		}
 
 	}

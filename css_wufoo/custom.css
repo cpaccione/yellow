@@ -26,7 +26,8 @@ html.embed {
 }
 
 input.large,
-input.medium {
+input.medium,
+input.small {
   height: 55px;
   font-size: 17px;
 }
