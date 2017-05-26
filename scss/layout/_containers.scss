@@ -130,6 +130,10 @@
 			max-width: 570px;
 			margin: 0 auto;
 
+			@include responsive(max-width, 600px) {
+				display: none;
+			}
+
 
 			h1 {
 				font-size: 6.25rem;
@@ -163,6 +167,21 @@
 			}
 		}
 
+		.left-wrap-mobile {
+			display: none;
+			padding-top: 25px;
+
+			p {
+				font-size: 2rem;
+				font-weight: bold;
+				color: $vyellow;
+			}
+
+			@include responsive(max-width, 600px) {
+				display: block;
+			}
+		}
+
 
 		.right-wrap {
 			max-width: 570px;
@@ -175,6 +194,10 @@
 			p {
 				font-size: 1.25rem;
 				color: $white;
+
+				@include responsive(max-width, 600px) {
+					font-size: 1.125rem;
+				}
 			}
 		}
 
@@ -335,6 +358,11 @@
 
 			@include responsive(max-width, 992px) {
 				padding-top: 50px;
+			}
+
+			@include responsive(max-width, 600px) {
+				padding-top: 0px;
+				font-size: 1.125rem;
 			}
 		}
 
