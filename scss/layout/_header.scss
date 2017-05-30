@@ -107,6 +107,22 @@
 			margin-bottom: 32px;
 		}
 	}
+
+	p.desktop-copy {
+			@include responsive(max-width, 600px) {
+				display: none;
+			}
+	}
+
+	p.mobile-copy {
+		display: none;
+		margin-top: 20px;
+		margin-bottom: 0px;
+
+		@include responsive(max-width, 600px) {
+			display: block;
+		}
+	}
 }
 
 .yellow {

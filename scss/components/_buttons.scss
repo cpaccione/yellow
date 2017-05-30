@@ -25,6 +25,10 @@
   text-decoration: none;
   display: inline-block;
 
+  @include responsive(max-width, 600px) {
+    padding: 15px 20px 15px 20px;
+  }
+
   &:hover {
     transition: all 0.3s ease-in-out 0s;
     background-color: $white;
