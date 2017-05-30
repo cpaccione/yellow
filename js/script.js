@@ -11,15 +11,21 @@ $(document).ready(function() {
 
   // VSS side bar
 $('.viega-select ul li:first').addClass('active');
+
 $('.tab-content:not(:first)').hide();
-$('.viega-select ul li a').click(function (event) {
+
+$('.viega-select ul li a').hover(function (event) {
   event.preventDefault();
+
   var content = $(this).attr('href');
+
   $(this).parent().addClass('active');
+
   $(this).parent().siblings().removeClass('active');
   // $(content).fadeIn(0);
   $(content).show();
   $(content).siblings('.tab-content').hide();
+  
 });
 
 // Get the modal
